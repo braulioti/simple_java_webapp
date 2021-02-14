@@ -1,4 +1,6 @@
 public class SimpleApp {
+    public static Server server;
+
     public static void main(String arg[]) throws Exception {
 
         System.out.println("---------------------------------------------------------------------------------------");
@@ -9,5 +11,9 @@ public class SimpleApp {
         System.out.println("E-mail: braulio@braulioti.com.br");
         System.out.println("---------------------------------------------------------------------------------------");
         System.out.println("");
+
+        server = new Server();
+
+        server.bootstrap();
     }
 }
